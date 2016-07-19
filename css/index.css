@@ -1,0 +1,234 @@
+body{
+	padding-left: 20px;
+}
+.callbacks_container {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+}
+.rslides li{
+    position: relative;
+    display: block;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    list-style: none;
+}
+.rslides img {
+    height: auto;
+    border: 0;
+    z-index: 99;
+    width: 100%;
+}
+.banner{
+	position: relative;
+	width: 100%;
+	height: 420px;
+}
+.boxInner{
+	margin-top: 20px;
+	height: 300px;
+	width: 100%;
+	border: 1px solid black;
+	margin-top: 20px;
+	text-align: center;
+}
+.boxInner p{
+	font-size: 30px;
+}
+.box{
+	float: left;
+	text-align: center;
+	margin-right: 130px;
+	margin-top: 70px;
+}
+.box span{
+	font-size: 25px;
+}
+
+.Inner{
+	height: 125px;
+	width: 1000px;
+	position: absolute;
+	left: 50%;
+	margin-left: -450px;
+}
+.lastbox{
+	margin-right: 0;
+}
+.circle{
+	height: 120px;
+	width: 120px;
+	border: 1px solid black;
+	border-radius: 100px;
+	margin-bottom: 5px;
+}
+.LeftContain{
+	height: 1200px;
+	width: 68%;
+	border: 1px solid gray;
+	position: relative;
+	float: left;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.RightContain{
+	height: 1200px;
+	width: 29%;
+	/*border: 1px solid gray;*/
+	position: relative;
+	float: right;
+	margin-top: 20px;
+}
+.LeftContain ul:nth-child(1) li{
+	float: left;
+	text-decoration: none;
+	font-size: 20px;
+	list-style: none;
+	margin-right: 50px;
+	margin-top: 30px;
+}
+.LeftContain ul:nth-child(2) li{
+	float: left;
+	text-decoration: none;
+	font-size: 20px;
+	list-style: none;
+	margin-right: 60px;
+	margin-top: 20px;
+}
+.LeftContain li a{
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+	font-family: 'Poiret One', cursive,
+}
+.LeftContain li a:hover{
+	color: #0099FF;
+	border-bottom:3px solid #0099FF;
+	padding-bottom: 3px;
+}
+.subNav{
+	height: 150px;
+	width: 100%;
+}
+.FilmIntroduce{
+	height: 320px;
+	width: 95%;
+	margin: 20px;
+	background-color: #ebebeb;
+	position: relative;
+}
+.Shelia{
+	position: absolute;
+	height: 280px;
+	width: 98%;
+	background-color: #fff;
+	margin-top: 20px;
+}
+.Shelia img{
+	height: 280px;
+	width: 345px;
+	float: left;
+}
+.virgin{
+	right: 0;
+	top: 30px;
+	height: 280px;
+	width: 480px;
+	position: absolute;
+	font-size: 20px;
+}
+.grayBox{
+	height: 100px;
+	width: 460px;
+	background-color: #ebebeb;
+	line-height: 100px;
+}
+.xiyou img{
+	height: 280px;
+	width: 100%;
+}
+.ghost img{
+	height: 280px;
+	width: 100%;
+}
+.data{
+	height: 280px;
+	width: 100%;
+/*	background-color: blue;*/
+	margin-bottom: 20px;
+	border: 1px solid gray;
+	font-size: 20px;
+	position: relative;
+}
+.project{
+	position: absolute;
+	height: 100px;
+	width: 50%;
+	top: 50px;
+	right: 35px;
+}
+.project span{
+	font-size: 50px;
+	color: #0099ff;
+}
+.circle2{
+	height: 80px;
+	width: 80px;
+	border: 1px solid black;
+	border-radius: 100px;
+	margin: 30px 0 5px 20px;
+}
+.information li{
+	width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	margin-top: 15px;
+	list-style: disc;
+}
+.invest table td{
+	padding-left: 15px;
+	padding-bottom: 20px;
+}
+.invest table td:nth-child(1){
+	padding-top: 10px;
+	font-size: 14px;
+	color: gray;
+}
+.invest table td:nth-child(4){
+	font-size: 17px;
+	color: red;
+}
+.WeChat img{
+	height: 175px;
+	width: 175px;
+	top: 50%;
+	left: 50%;
+	margin-left: -88px;
+	margin-top: -88px;
+	position: absolute;
+}
+.partner{
+	height: 150px;
+	width: 100%;
+	border: 1px solid gray;
+	position: relative;
+	clear: both;
+}
+.partner img{
+	width: 100%;
+	height: 80px;
+}

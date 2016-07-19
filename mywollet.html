@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>我的钱包</title>   
+   <link rel="stylesheet" type="text/css" href="css/headerNav.css">
+   
+   <link rel="stylesheet" type="text/css" href="css/wollet.css">
+   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+   <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> 
+   <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+   <script src="js/wollet.js"></script>
+</head>
+<body> 
+	<div class="nav">
+		<ul class="headerNav">
+			<li><a href="#">首页</a></li>
+			<li><a href="mine.html">我要投资</a></li>
+			<li><a href="album.html">我要融资</a></li>
+			<li><a href="album.html">帮助中心</a></li>
+		</ul>	
+		<ul class="logreg">
+			<li><a>登录</a></li>
+			<li><strong>|</strong></li>
+			<li><a>注册</a></li>
+		</ul>
+	</div>
+	<div id="conInwal">
+		<table border="1" width="180" class="tab">
+			<tr>
+				<td class="mm"><a href="#">我的项目</a></td>			
+			</tr>
+			<tr>
+				<td class="mm"><a href="#">我的钱包</a></td>			
+			</tr>
+			<tr>
+				<td class="mm"><a href="#">消息中心</a></td>			
+			</tr>
+			<tr>
+				<td class="mm"><a href="#">账号管理</a></td>			
+			</tr>
+		</table>
+		<div class="tomin">
+			<ul id="account">
+				<li>账户详情</li>
+				<li>充值</li>
+				<li id="linkbt">提现</li>
+			</ul>
+			<div id="innerTomin">
+				<!-- <button id="linkbt">弹出浮出层</button> -->
+				<div id="light"><button id="closebt">关闭窗口</button></div> 
+				<div id="fade"></div>
+			</div>
+		</div>
+		
+		<div class="bomin" id="movChange">
+			<h2>记录详情</h2>
+			<ul id="record">
+				<li>投资记录</li>
+				<li>收益记录</li>
+				<li>充值记录</li>
+				<li>提现记录</li>
+			</ul>
+			<div id="tzrecord">
+				<table class="taa" id="mytab">
+					<th>交易时间</th>
+					<th>交易说明</th>
+					<th>交易金额</th>
+					<th>交易状态</th>
+				</table>
+			</div>
+			<div id="syrecord" class="recoRd">
+				<table class="taa" id="mytabTwo">					
+					<tr>
+						<th>项目信息</th>
+						<th>投资金额</th>
+						<th>投资占比</th>
+						<th>收益时间</th>
+						<th>收益金额</th>
+					</tr>
+				</table>
+			</div>
+			<div class="recoRd reTandF">
+				<table class="taa" id="mytabThr">					
+					<tr>
+						<th>充值时间</th>
+						<th>充值金额</th>
+						<th>充值状态</th>
+					</tr>
+				</table>
+			</div>
+			<div class="recoRd reTandF">
+				<table class="taa" id="mytabFou">					
+					<tr>
+						<th>提现时间</th>
+						<th>提现金额</th>
+						<th>提现状态</th>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+		<script type="text/javascript">
+			
+			var mytab=document.getElementById('mytab');
+			var mytabTwo=document.getElementById('mytabTwo');
+			var mytabThr=document.getElementById('mytabThr');
+			var mytabFou=document.getElementById('mytabFou');
+
+			for (var i = 0; i < 5; i++) {
+    		    var nUL=document.createElement("tr");
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="2016-05-16"
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="投资《美人公寓》"
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="10,000元"
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="投资成功"
+    		    mytab.appendChild(nUL);
+    		}
+    		for (var i = 0; i < 6; i++) {
+    		    var nUL=document.createElement("tr");
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="《美人公寓》"
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="10,000元"
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="1%"
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="2016-05-16"
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="1,200"
+    		    mytabTwo.appendChild(nUL);
+    		}
+    		for (var i = 0; i < 3; i++) {
+    			var nUL=document.createElement("tr");
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="2016-05-16"
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="1,0000";
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="充值成功"
+    		    mytabThr.appendChild(nUL);
+    		}
+    		for (var i = 0; i < 3; i++) {
+    			var nUL=document.createElement("tr");
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="2016-05-16"
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="1,0000";
+    		    var nLi=document.createElement("td");
+    		    nUL.appendChild(nLi);
+    		    nLi.innerHTML="提现成功"
+    		    mytabFou.appendChild(nUL);
+    		}//填充表格内容
+			var record=document.getElementById('record');
+			var oLi=record.getElementsByTagName('li');
+			var movChange=document.getElementById('movChange');
+			var oDiv=movChange.getElementsByTagName('div');
+			for (var i = 0; i < oLi.length; i++) {
+				oLi[i].onmouseover=(function(a){
+        		    return function(){
+        		    	for(var j = 0;j < oDiv.length;j++){
+							oDiv[j].style.display='none';
+						}
+						oDiv[a].style.display='block';
+        		    }          
+        		})(i);
+			};//鼠标移动显示对应的表格
+		</script>
+	</div>	
+</body>
+</html>

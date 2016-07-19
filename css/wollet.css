@@ -1,0 +1,136 @@
+.mm{
+	padding: 20px 0;
+	font-size: 25px;
+}
+.tab{
+	position: absolute;
+	left: 100px;
+	top: 50px;
+	text-align: center;
+	background-color: white;
+}
+.mm a:hover{
+	text-decoration: none;
+	color: blue;
+	border-bottom:3px solid blue;
+	padding-bottom: 3px;
+}
+.mm>a{
+	cursor: pointer;
+	color: black;
+
+}
+#conInwal{
+	width: 100%;
+	height: 1000px;
+	position: relative;
+	padding-top: 50px;
+	background-color: #f6f6f6;
+}
+.tomin{
+	width: 850px;
+	height: 250px;
+	margin-left: 300px;
+	top: 50px;
+	border: 1px solid black;
+	background-color: #fff;
+}
+.tomin>ul>li{
+	font-size: 25px;
+	margin-top: 5px;
+	float: left;
+	list-style: none;
+	margin-left: 50px;
+}
+.tomin>ul>li:hover{
+	color: blue;
+}
+#fade { 
+		display:none; 
+		position:fixed; 
+		top:0%; 
+		left:0%; 
+		width:100%; 
+		height: 100%;
+		background-color:black; 
+		z-index:1001; 
+		-moz-opacity:0.8; 
+		opacity:0.8; 
+		 
+	} 
+	#light{ 
+		display:none; 
+		position:absolute; 
+		width: 580px;
+		height: 250px;
+		background-color:white; 
+		z-index:1002; 
+		overflow:auto; 
+		margin-left: auto;
+		margin-right: auto;
+	} 
+.bomin{
+	width: 850px;
+	height: 400px;
+	position: absolute;
+	left: 300px;
+	top: 350px;
+	background-color: #fff;
+	border: 1px solid black;
+}
+.bomin>ul>li{
+	font-size: 20px;
+	margin-top: 5px;
+	float: left;
+	list-style: none;
+	margin-right: 50px;
+}
+.bomin>ul>li:hover{
+	color: blue;
+}
+#tzrecord{
+	position: absolute;
+	z-index:9;
+	left: 30px;
+	top: 100px;
+	width: 780px;
+	height: 250px; 
+	display: block;
+}
+.recoRd{
+	position: absolute;
+	z-index:1;
+	left: 30px;
+	top: 100px;
+	width: 780px;
+	height: 250px;
+	display: none;
+}
+.taa{
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+.taa tr{
+	border: 1px solid #ccc;
+	height: 30px;
+	width: 780px;
+}
+.taa td{
+	padding:10px 55px;
+}
+.taa th{
+	padding:10px 55px;
+	background-color: #f6f6f6;
+}
+#mytabTwo td{
+	padding: 10px 40px;
+}
+#mytabTwo th{
+	padding: 10px 40px;
+}
+.reTandF th{
+	padding:  10px 90px;
+}
+.reTandF td{
+	padding: 10px 90px;
+}
